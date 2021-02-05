@@ -8,8 +8,7 @@ module.exports.run = async (client, message, args) => {
 
     let invite = new Discord.MessageEmbed()
     .setTitle("Invite & Support Link!")
-    .addField("Invite Link", "[Click here to invite me](https://bit.ly/InviteZeroMusic)")
-    .addField("Support Server", "[Click to join support Server](https://discord.gg/REAW5VM)")
+    .addField("Invite Link", "[Click here to invite me](ODA3MjE0NzM5NTExMzEyNDA0.YB0vTw.qT8j6q4SYlu-ywAJL-ThstFlNAg)")
     .setTimestamp()
     .setFooter(`Requested by ${message.author.tag}`, client.user.displayAvatarURL())
     message.channel.send(invite);
