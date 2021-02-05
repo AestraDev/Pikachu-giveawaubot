@@ -5,7 +5,9 @@ module.exports = (client) => {
             .toLocaleString()}  users.`
   );
 
-  const activities = [`Giveaways in ${client.guilds.cache.size} guilds`,"g!help",`over ${client.users.cache.size} users!`];
+  const activities = [`Giveaways in ${client.guilds.cache.size} guilds`,"g!help",`over ${client.guilds.cache
+            .reduce((a, b) => a + b.memberCount, 0)
+            .toLocaleString()} users!`];
   setInterval(() => {
     let activity = activities[Math.floor(Math.random() * activities.length)];
     client.user.setActivity(activity, { type: "WATCHING" });
