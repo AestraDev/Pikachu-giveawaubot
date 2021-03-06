@@ -5,10 +5,10 @@ module.exports.run = async (client, message, args) => {
     let prefix = config.prefix;
     if (message.author.bot) return;
     if(!message.content.startsWith(prefix)) return;
-
+let id = "" //bot id paste here
     let invite = new Discord.MessageEmbed()
     .setTitle("Invite & Support Link!")
-    .addField("Invite Link", "[Click here to invite me](https://discord.com/api/oauth2/authorize?client_id=807214739511312404&permissions=8&scope=bot)")
+    .addField("Invite Link", `[Click here to invite me](https://discord.com/api/oauth2/authorize?client_id=${id}&permissions=8&scope=bot)`)
     .setTimestamp()
     .setFooter(`Requested by ${message.author.tag}`, client.user.displayAvatarURL())
     message.channel.send(invite);
