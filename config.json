@@ -1,5 +1,5 @@
 {
-  "token": "", 
+  "token": "token here", 
   "prefix": "g!",
   "everyoneMention": false,
   "hostedBy": true
